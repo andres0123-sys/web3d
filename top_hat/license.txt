@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sombrero Vueltiao Colombia
+* source:	https://sketchfab.com/3d-models/sombrero-vueltiao-colombia-626560a80beb4edc992b001f8b54e714
+* author:	Juan David (https://sketchfab.com/JuanDavid.497)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sombrero Vueltiao Colombia" (https://sketchfab.com/3d-models/sombrero-vueltiao-colombia-626560a80beb4edc992b001f8b54e714) by Juan David (https://sketchfab.com/JuanDavid.497) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
