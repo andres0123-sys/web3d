@@ -1,0 +1,90 @@
+<html>
+  <head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+
+<a-scene cursor="rayOrigin: mouse">        
+  <a-assets>
+          <img id="fons" src="bob.jpg" />
+          <img id="texturaterra" src="patricio.jpg" />
+          <img id="guernica" src="holandes.jpeg" />        
+          <img id="cara" src="cangrejo.jpeg" />            
+          <img id="bicicletes" src="gary.jpeg" />
+          <img id="marvin" src="medusa.jpeg" />
+          <img id="rata" src="plankton.jpg" />
+          <a-asset-item id="fall" src="messi.glb"></a-asset-item>
+    </a-assets>
+
+
+
+     
+      
+      
+        </a-assets>
+        <a-sky src="#fons"></a-sky>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" src="#texturaterra"></a-plane>
+        <a-entity gltf-model="#fall" position="0 5 -5" scale="1 1 1"></a-entity>
+        <a-asset-item id="fall" src="messi.glb"></a-asset-item>
+    </a-assets>
+       
+       
+ <a-plane 
+  position="-1 4 -8"
+  rotation="0 0 0"
+  width="8"
+  height="2"
+  src="#guernica"
+  animation="property: position; to: -1 4 -2; dur: 3000; dir: alternate; loop: true">
+
+
+</a-plane>
+
+<a-box 
+  position="-4 3 0"
+  rotation="0 0 50"
+  src="#cara"
+  depth="1"
+  height="1"
+  width="1"
+  animation="property: position; to: -4 5 0; dur: 2000; dir: alternate; loop: true">
+</a-box>
+        
+
+<a-dodecahedron 
+  position="8 2 -6"
+  radius="3"
+  src="#bicicletes"
+  animation="property: rotation; to: 0 360 0; loop: true">
+</a-dodecahedron>
+
+
+       <a-cylinder id="vamo" src="#rata" color ="#56A682" radius="0.2" height="1" position="1 0 1"></a-cylinder>
+       <script>
+          let unobjecte = document.querySelector("#vamo");
+       
+          unobjecte.addEventListener("mouseenter", () => {            
+            unobjecte.setAttribute("animation", {
+              property: "position",
+              to: "8 40 -6",
+              dur: 10000
+            });
+          });
+        </script>
+
+       <a-sphere id="esmou" position="2 1 -3" src="#marvin" radius="1"></a-sphere>
+    </a-scene>
+<script>
+          let dosbjecte = document.querySelector("#esmou");
+       
+          dosbjecte.addEventListener("click", () => {            
+            dosbjecte.setAttribute("animation", {
+              property: "position",
+              to: "8 40 -6",
+              dur: 10000
+            });
+          });
+        </script>
+
+  </body>
+</html>
